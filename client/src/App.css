@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: rgb(195, 34, 124);
+  background: linear-gradient(
+    0deg,
+    rgba(195, 34, 124, 1) 0%,
+    rgba(45, 49, 253, 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+
+  -webkit-animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.App {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+}
