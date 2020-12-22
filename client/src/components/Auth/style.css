@@ -1,0 +1,32 @@
+.auth {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+}
+
+.auth > h1 {
+  color: silver;
+}
+
+.auth > .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.auth > .buttons > button {
+  margin: 10px;
+  width: 200px;
+  height: 50px;
+  background-color: #4d82ff;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
