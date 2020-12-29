@@ -1,37 +1,38 @@
-import React, { Suspense } from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import React, { Suspense, useState } from "react";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import "./App.css";
 import "./components/LogInForm/style.css";
 import "./components/Loader/style.css";
-const Auth = React.lazy(() => import("./components/Auth/Auth"));
+const Routes = React.lazy(() => import("./components/Routes/Routes"));
+const Header = React.lazy(() => import("./components/Header/Header"));
 
 function App() {
+  const [user, setUser] = React.useState({});
+
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Suspense
-          fallback={
-            <div class="lds-default">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          }
-        >
-          <h1>Welcome to My App</h1>
-          <Auth />
-        </Suspense>
-      </div>
-    </BrowserRouter>
+    <Router>
+      <Suspense
+        fallback={
+          <div className="lds-default">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        }
+      >
+        <Header />
+        <Routes />
+      </Suspense>
+    </Router>
   );
 }
 

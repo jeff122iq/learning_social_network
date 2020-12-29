@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sendgrid/mail": "^7.4.0",
     "concurrently": "^5.3.0",
     "react-timeout": "^2.0.0"
   }

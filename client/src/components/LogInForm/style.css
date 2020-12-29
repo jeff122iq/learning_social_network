@@ -1,11 +1,35 @@
+/* @-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+} */
+
 .logInForm {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
   width: 100%;
   max-width: 500px;
   background-color: white;
   padding: 20px;
+  /* -webkit-animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
 }
 
 .logInForm > h1 {
@@ -37,6 +61,7 @@
 }
 
 .logInForm > form > button {
+  display: block;
   width: 500px;
   height: 40px;
   border: none;

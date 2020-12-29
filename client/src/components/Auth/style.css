@@ -7,7 +7,8 @@
   align-items: center;
   flex-direction: column;
   background-color: white;
-  text-align: center;
+  text-align: left;
+  margin: 100px auto;
 }
 
 .auth > h1 {
@@ -20,13 +21,25 @@
   justify-content: center;
 }
 
-.auth > .buttons > button {
+.auth > .buttons > .button {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
   width: 200px;
   height: 50px;
   background-color: #4d82ff;
+  border: 2px solid #4d82ff;
   color: white;
-  border: none;
   outline: none;
   cursor: pointer;
+  transition: all 0.5s;
+}
+
+.auth > .buttons > .button:hover {
+  background-color: white;
+  color: #4d82ff;
+  border: 2px solid #4d82ff;
+  transition: all 0.3s;
 }

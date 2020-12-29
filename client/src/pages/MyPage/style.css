@@ -1,0 +1,46 @@
+.myPage {
+  width: calc(100% / 2);
+  height: 100vh;
+  background-color: seagreen;
+  margin: 0 40px;
+  border: 2px solid white;
+}
+
+.myPage > h1 {
+  text-align: center;
+}
+
+.myPage > .userInf {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 50px 0;
+  border-bottom: 2px solid white;
+}
+
+.myPage > .userInf > .userImage {
+  width: 200px;
+  padding: 90px 0;
+  background-color: sienna;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-left: none;
+  border-top: none;
+}
+
+.myPage > .userInf > .titles {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.myPage > .userInf > .titles > h2 {
+  color: white;
+}
+
+.myPage > .userInf > .titles > p {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
