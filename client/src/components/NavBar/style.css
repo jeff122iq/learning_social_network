@@ -7,4 +7,23 @@
   max-width: 200px;
   display: flex;
   flex-direction: column;
+  padding: 0;
+}
+
+.navBar > a {
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: all 0.3s;
+}
+
+.navBar > a:hover {
+  background: none;
+  color: white;
+  transition: all 0.3s;
 }
